@@ -12,8 +12,9 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<TopPage />} />
+        {/* <Route path="/" element={<TopPage />} /> */}
         <Route path="/signup" element={<SignupPage />} />
+        <Route path ="/" element={<StudentLoginPage />} />
 
         <Route path="/admin/login" element={<AdminLoginPage />} /> 
         <Route path="/admin/meeting" element={<AdminMeetingPage />} />
