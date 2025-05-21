@@ -1,11 +1,17 @@
 import Header from "../../../components/header/header";
+import React from "react";
+import Bottomtab from "../../../components/bottomtab/bottomtab";
 
-const RoginPage: React.FC = () => {
+
+const loginPage: React.FC = () => {
   return (
-    <>
-      <Header title="学生ログイン" />
-    </>
+    <div>
+      <div style={{ paddingBottom: '60px' }}>
+        <Header title="学生ログイン" />
+      </div>
+      <Bottomtab />
+    </div>
   );
 };
 
-export default RoginPage;
+export default loginPage;
