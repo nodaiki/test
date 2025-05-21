@@ -1,27 +1,39 @@
-// src/app/admin/login/loginPage.tsx
-import Header from "../../../components/header/header";
-import "./loginPage.css";
+import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import './loginPage.css';
 
-function LoginPage() {
+const LoginPage = () => {
+  const navigate = useNavigate();
+  const [studentId, setStudentId] = useState('');
+  const [password, setPassword] = useState('');
+
+  const handleLogin = () => {
+    // 仮のログイン処理（バックエンド未接続）
+    if (studentId && password) {
+      console.log('ログイン成功');
+      navigate('/student/top'); // 仮の遷移先
+    } else {
+      alert('学籍番号とパスワードを入力してください');
+    }
+  };
+
   return (
-    <>
-      <Header title="管理者ログイン" />
-      <div className="login-wrapper">
-        <div className="login-container">
-          <h1 className="app-title">NakaLab App</h1>
-          <h2 className="admin-title">管理者</h2>
-          <form className="login-form">
-            <label htmlFor="id">ID</label>
-            <input type="text" id="id" />
-
-            <label htmlFor="password">Password</label>
-            <input type="password" id="password" />
-
-            <button type="submit">ログイン</button>
-          </form>
-        </div>
-      </div>
-    </>
+    <div className="login-container">
+      <h2>管理者用ログイン</h2>
+      <input
+        type="text"
+        placeholder="学籍番号"
+        value={studentId}
+        onChange={(e) => setStudentId(e.target.value)}
+      />
+      <input
+        type="password"
+        placeholder="パスワード"
+        value={password}
+        onChange={(e) => setPassword(e.target.value)}
+      />
+      <button onClick={handleLogin}>ログイン</button>
+    </div>
   );
 }
 
