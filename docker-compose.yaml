@@ -16,6 +16,9 @@ services:
       - "${FRONTEND_PORT}:${FRONTEND_PORT}"
     expose:
       - "${FRONTEND_PORT}"
+    environment:
+      - WATCHPACK_POLLING=true
+      - CHOKIDAR_USEPOLLING=true 
     tty: true
     volumes:
       - ./frontend_react:/frontend_react
