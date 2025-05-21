@@ -2,7 +2,7 @@ import Header from "../../components/header/header";
 import Calender from "../../components/calender/calender";
 import { GOOGLE_CALENDER_ID } from "../../config";
 
-const AdminTopPage: React.FC = () => {
+const StudentTopPage: React.FC = () => {
   //ログインしているユーザーが管理者か学生かを判定して、表示するコンポーネントを切り替える
   return (
     <>
@@ -12,4 +12,4 @@ const AdminTopPage: React.FC = () => {
   );
 };
 
-export default AdminTopPage;
+export default StudentTopPage;

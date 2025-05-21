@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import TopPage from "./pages/top/topPage.tsx";
+import AdminTopPage from "./pages/admin/top/topPage.tsx";
 import SignupPage from "./pages/signup/signupPage";
 
 import AdminLoginPage from "./pages/admin/login/loginPage.tsx";
@@ -17,6 +17,7 @@ function App() {
         <Route path ="/" element={<StudentLoginPage />} />
 
         <Route path="/admin/login" element={<AdminLoginPage />} /> 
+        <Route path="/admin/top" element={<AdminTopPage />} /> 
         <Route path="/admin/meeting" element={<AdminMeetingPage />} />
 
         <Route path ="/student/login" element={<StudentLoginPage />} />

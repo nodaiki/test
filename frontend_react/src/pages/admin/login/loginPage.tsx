@@ -81,14 +81,14 @@ const RoginPage: React.FC = () => {
 
           <form onSubmit={handleLogin}>
             <div style={{ marginBottom: "10px", textAlign: "left" }}>
-              <label htmlFor="id" style={{ fontSize: "12px" }}>ID</label><br />
+              <label htmlFor="id" >ID</label><br />
               <input
                 id="id"
                 type="text"
                 value={id}
                 onChange={(e) => setId(e.target.value)}
                 style={{
-                  width: "250px",
+                  width: "400px",
                   height: "30px",
                   fontSize: "14px",
                   padding: "4px",
@@ -100,14 +100,14 @@ const RoginPage: React.FC = () => {
             </div>
 
             <div style={{ marginBottom: "20px", textAlign: "left" }}>
-              <label htmlFor="password" style={{ fontSize: "12px" }}>Password</label><br />
+              <label htmlFor="password" >Password</label><br />
               <input
                 id="password"
                 type="password"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
                 style={{
-                  width: "250px",
+                  width: "400px",
                   height: "30px",
                   fontSize: "14px",
                   padding: "4px",
