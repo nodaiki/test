@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import TopPage from "./pages/top/topPage.tsx";
+import StudentTopPage from "./pages/student/top/TopPage.tsx";
 import SignupPage from "./pages/signup/signupPage";
 
 import AdminLoginPage from "./pages/admin/login/loginPage.tsx";
@@ -12,7 +12,7 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<TopPage />} />
+        <Route path="/student/top" element={<StudentTopPage />} />
         <Route path="/signup" element={<SignupPage />} />
 
         <Route path="/admin/login" element={<AdminLoginPage />} /> 
