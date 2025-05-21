@@ -139,6 +139,6 @@ const RoginPage: React.FC = () => {
       </div>
     </>
   );
-};
+}
 
-export default RoginPage;
+export default LoginPage;

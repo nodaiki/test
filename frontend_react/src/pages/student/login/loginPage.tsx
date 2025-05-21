@@ -139,4 +139,4 @@ const RoginPage: React.FC = () => {
   );
 };
 
-export default RoginPage;
+export default LoginPage;
