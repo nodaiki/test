@@ -1,0 +1,19 @@
+.eventCard {
+  border: 1px solid #7d94a9;
+  border-radius: 8px;
+  padding: 12px;
+  margin-bottom: 10px;
+  background-color: #d5e6ed;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  list-style: none;
+  max-width: 600px;
+  width: 100%;
+}
+.dateTitle {
+  color: #8b8a8a;
+  padding: 12px 0;
+  border-top: 1px solid #8b8a8a;
+  border-bottom: 1px solid #8b8a8a;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}

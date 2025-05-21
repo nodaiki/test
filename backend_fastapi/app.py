@@ -5,6 +5,7 @@ import sys
 sys.path.append('../')
 from routes.users_endpoint import users_endpoint
 from routes.auth_endpoint import auth_endpoint
+from config import BACKEND_PORT
 
 app = FastAPI(
     title="Calendar App Backend",
@@ -30,4 +31,4 @@ def root():
     return {"root":"Calendar App Backend"}
 
 if __name__ == "__main__":
-    uvicorn.run("app:app",host="0.0.0.0",port=8173,reload=True)
+    uvicorn.run("app:app",host="0.0.0.0",port=int(BACKEND_PORT),reload=True)
